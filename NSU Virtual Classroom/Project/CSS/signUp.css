@@ -1,0 +1,95 @@
+body
+{
+	margin: 0;
+}
+
+.main-section
+{
+	float: #f4f4f4;
+	width: 100%;
+	height: auto;
+	padding: 30px 0px;
+}
+
+.main-section .left
+{
+	
+	float: left;
+
+	width: 30%;
+	height: auto;
+	box-sizing: border-box;
+	padding-left: 3%; 
+	
+}
+
+.main-section #right
+{
+	margin-top: 50px;
+	float: right;
+
+	width: 64%;
+	height: auto;
+	background: brown;
+	margin-right: 3%;
+	box-sizing: border-box;
+	padding: 0px 20px;
+	border-radius: 5px;
+
+}
+
+.main-section .left img
+{
+
+	width: 100%;
+	height: auto; /*max-height=can't cross the limit*/
+	border-radius: 5px; /* rightTop,rightBottom,leftTop,leftBottom */
+
+
+}
+
+
+
+
+.main-section .right h4
+{
+
+	color: #d7b065;
+	font-size: 18px;
+	font-family: 'Nunito Sans',sans-serif;
+	text-transform: uppercase; 
+	font-weight: bold;
+	line-height: 31px;/* space between two consecutive line */
+	letter-spacing: 6px;
+	margin-bottom: 15px;
+
+}
+
+.main-section .left p
+{
+	font-weight: bold;
+	font-size: 50px;
+}
+
+
+
+
+
+
+
+
+/*
+.main-section .right input
+{
+	input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+}*/
+

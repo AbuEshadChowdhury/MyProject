@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+
+	<style type="text/css">
+		.header {
+
+			width: 100%;
+			height: 70px;
+			background-color: #7facd0;;
+		}
+
+		.header h1 {
+			float: left;
+			margin-left: 10px;
+			font-family: helvatica, sans-serif;
+		
+		}
+
+		.main{
+			height: 150px;
+		}
+		
+		input {
+			background-color: #00394d; /* Green */
+   			border: 1px solid green;
+    		color: white;
+    		padding: 15px 32px;
+    		text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		font-size: 16px;
+    		cursor: pointer;
+    		float: left;
+    		margin-top: 20px;
+    		margin-bottom: 60px;
+		}
+		input:hover {
+    		background-color: #7facd0;
+		}
+
+		.left input {
+			margin-left: 220px;
+		}
+		h4{
+			padding-top: 80px;
+			padding-right: 750px;
+
+			
+		}
+
+		
+	
+
+	
+		 #map {
+		   width: 800px;
+		   height: 400px; /* Always explicit */
+		   background-color: grey;
+		   margin-left: 50px;
+		  
+		 }
+	</style>
+
+</head>
+
+<body>
+	<div class="header">
+		<h1>WELCOME</h1>
+	</div>
+
+	<div class="main">
+	
+	<a href="login.html" class="left"><input type="button" name="teacher"  value="Login as teacher"></a>
+	<a href="login.html"><input type="button" name="student"  value="Login as student"></a>
+	<a href="signup.html"><input type="button" name=""  value="Sign Up"></a>
+	<h4><br>Want to reach us</h4>
+	
+		
+
+	</div>
+	
+	
+	</div>
+	
+	
+	<div id="map"></div>
+
+	<script>
+
+	//Geolocation
+	var nsu, infoWindow;
+	// Initialize and add the map
+	function initMap() {
+	  // The location of nsu
+	  nsu = {lat: 23.815371, lng: 90.425544};
+	  // The map, centered at nsu
+	  var map = new google.maps.Map(
+	      document.getElementById('map'), {zoom: 15, center: nsu});
+	  // The marker, positioned at nsu
+	  var marker = new google.maps.Marker({position: nsu, map: map});
+
+	  //Geolocation
+	  infoWindow = new google.maps.InfoWindow;
+	  
+
+	}
+    </script>
+
+    <script async defer    
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvybibU7s23-D58Z4_4basp0_C24KIHXc&callback=initMap"> // async : continue rendering the rest of your page while the API loads
+    </script>
+
+</body>
+</html>

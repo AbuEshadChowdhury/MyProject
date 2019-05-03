@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NSU Virtual classroom</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/login.css">
+</head>
+<body>
+<div class="main">
+
+	<div class="header">
+		<h1>NSU Virtual classroom</h1>
+		<button type="button"><a href="Registration.html">Sign up</a></button>
+		<button type="button">Log in</button>
+	</div>
+
+	<div class="middle">
+		<h2>Login</h2>
+
+		<form method="POST" action="./server/login.php">
+			
+			<table>
+				<tr>
+					<td>Email:</td>
+					<td>
+						<input type="text" name="email" id="email" placeholder="Your Email..">
+					</td>
+				</tr>
+				<tr>
+				    <!--	<td><label>Password: </label> </td> -->
+					<td>Password:</td>
+					<td>
+						<input type="password" name="password" id="password" placeholder="Your secret password..">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Login"></td>
+				</tr>
+				
+			</table>
+			<p><a href="#">Forget password?</a></p>
+		</form>
+	</div>
+
+	<hr>
+
+	<footer>
+		<h3>About</h3>
+		<a href="#">Our story</a>
+		<p>&copy; North South University</p>
+	</footer>
+</div>
+</body>
+</html>
